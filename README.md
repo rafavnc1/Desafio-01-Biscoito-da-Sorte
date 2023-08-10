@@ -1,5 +1,5 @@
 # Biscoito da Sorte 
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/rafavnc1/Desafios-Rocketseat/blob/main/LICENSE)
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/rafavnc1/Desafio-01-Biscoito-da-Sorte/blob/master/LICENSE)
 
 # Sobre o desafio
 
