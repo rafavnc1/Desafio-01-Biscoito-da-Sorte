@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --font-color-blue: #34355B;
+  --ff-phrase: 'Dancing Script', sans-serif;
+  --btn-backgound-color: #FF9500;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  display: grid;
+  place-items: center;
+
+  height: 100vh;
+
+  background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+main {
+  background-color: #FFF;
+  border-radius: 5px;
+  box-shadow: 0px 20px 50px 0 rgba(0, 0, 0, 0.80);
+
+  width: min(42rem, 90%);
+
+  padding: 4.8rem 6.4rem 6.4rem;
+}
+
+/* screen1*/ 
+
+.screen1 {
+  text-align: center;
+}
+
+h1, h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.screen1 p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  margin-bottom: 2rem;
+}
+
+.cookie {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.cookie:hover {
+  animation: vibration .2s infinite both;
+}
+
+@keyframes vibration {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, 2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px,-2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+/* screen2 */
+.screen2 {
+  text-align: center;
+}
+
+.phraseBox {
+  padding: 1rem;
+  margin-bottom: 5rem;
+
+  background: #E4EDF1;
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+
+  animation: phrase-animation 1s ease-in;
+}
+
+.phraseBox p {
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+.screen2 img {
+  width: 28rem;
+  height: auto;
+}
+
+.btnReset {
+  padding: 1.6rem;
+  
+  background-color: var(--btn-backgound-color);
+
+  border: none;
+  border-radius: 4px;
+
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.5rem;
+  color: #FFF;
+
+  margin-top: 5rem;
+
+  transition: background .3s;
+}
+
+.btnReset:hover {
+  background-color: #df8509;
+}
+
+
+@keyframes phrase-animation {
+  0% {
+    transform: translateY(150px) scale(.1);
+    opacity: .8;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
